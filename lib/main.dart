@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:patterns_getx/pages/home_page.dart';
+import 'package:patterns_getx/pages/splash_page.dart';
+import 'package:patterns_getx/pages/starter_page.dart';
 import 'package:patterns_getx/services/di_service.dart';
 
 void main() async {
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      home: const StarterPage(),
       // initialBinding: BindService(),
       // getPages: [
       //   GetPage(

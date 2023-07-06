@@ -16,9 +16,9 @@ class Network {
   static Future<String?> GET(String api, Map<String, String> params) async {
     var uri = Uri.https(BASE, api, params);
     var response = await get(uri, headers: headers);
-    LogService.d("Api: " + BASE + api);
-    LogService.w("Params: " + params.toString());
-    LogService.i("Response: " + response.body);
+    LogService.d("Api: $BASE$api");
+    LogService.w("Params: $params");
+    LogService.i("Response: ${response.body}");
     if (response.statusCode == 200) {
       return response.body;
     }
